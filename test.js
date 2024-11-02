@@ -1,33 +1,52 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var _0x12a4d0 = new Date(),
-        _0x3d5a6d = new Date('2024-11-11T23:59:59');
-    if (_0x12a4d0 > _0x3d5a6d) return;
-    
-    var _0x2b6b5a = document.getElementById("shopify-block-afterpay_on_site_messaging_payments_messaging_bALjzh");
-    if (_0x2b6b5a) {
-        var _0x21a8fc = document.querySelector(".hdt-product-info__item.hdt-product__price");
-        if (_0x21a8fc) {
-            _0x21a8fc.insertAdjacentElement("afterend", _0x2b6b5a);
-            var _0x4935de = setInterval(function() {
-                var _0x1584a4 = _0x2b6b5a.querySelector("square-placement");
-                if (_0x1584a4 && _0x1584a4.shadowRoot) {
-                    new MutationObserver(function(_0x45e8cf) {
-                        _0x45e8cf.forEach(function(_0x280d3b) {
-                            if (_0x280d3b.type === "childList") {
-                                var _0x5a31e8 = _0x1584a4.shadowRoot.querySelector(".afterpay-text2 strong") ||
-                                                _0x1584a4.shadowRoot.querySelector(".afterpay-main-text strong");
-                                if (_0x5a31e8) {
-                                    _0x5a31e8.style.color = "pink";
-                                    _0x2de9c9.disconnect();
+document.addEventListener("DOMContentLoaded", function () {
+    const afterpayContainer = document.getElementById(
+        "shopify-block-afterpay_on_site_messaging_payments_messaging_bALjzh"
+    );
+
+    if (afterpayContainer) {
+        const targetElement = document.querySelector(
+            ".hdt-product-info__item.hdt-product__price"
+        );
+
+        if (targetElement) {
+            targetElement.insertAdjacentElement("afterend", afterpayContainer);
+
+            const checkSquarePlacement = setInterval(() => {
+                const squarePlacement =
+                    afterpayContainer.querySelector("square-placement");
+                if (squarePlacement) {
+                    const shadowRoot = squarePlacement.shadowRoot;
+                    if (shadowRoot) {
+                        const observer = new MutationObserver((mutationsList) => {
+                            mutationsList.forEach((mutation) => {
+                                if (mutation.type === "childList") {
+                                    const amountElement = shadowRoot.querySelector('.afterpay-text2 strong')|| shadowRoot.querySelector('.afterpay-main-text strong');
+                                    console.log(amountElement)
+                                    if (amountElement) {
+                                        amountElement.style.color = 'pink';
+                                        observer.disconnect();
+                                    } else {
+                                        console.error('未找到amountElement元素');
+                                    }
                                 }
-                            }
+                            });
                         });
-                    }).observe(_0x1584a4.shadowRoot, { childList: true, subtree: true });
-                    clearInterval(_0x4935de);
+                        observer.observe(shadowRoot, { childList: true, subtree: true });
+                        clearInterval(checkSquarePlacement);
+                    } else {
+                        console.error('未找到shadowRoot');
+                    }
+                } else {
+                    console.error('未找到squarePlacement');
                 }
             }, 500);
+        } else {
+            console.error('未找到目标元素');
         }
+    } else {
+        console.error('未找到Afterpay容器');
     }
+});
 });
 
 

@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error('未找到Afterpay容器');
     }
 });
-});
 
 
 

@@ -25,6 +25,9 @@
   .prs2_textp{
     font-size:2rem;
   }
+  .bg2Px{
+    top: calc(-100%*(121 / 211)) !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

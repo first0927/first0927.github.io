@@ -7,18 +7,23 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .prs1 {
     font-size: 2rem;
+    padding-bottom:calc(100% * (121 / 211) + 100px);
   }
   .bg1{
     width:100%;
   }
   .see1{
     padding:0; 
+    height:auto;
    }
   .product__info-wrapper{
     margin:0;
     max-width:100% !important;
     width:100% !important;
     margin-top: calc(100%* calc(737 / 1680));
+  }
+  .prs2_textp{
+    font-size:2rem;
   }
 }
 

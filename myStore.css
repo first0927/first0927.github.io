@@ -7,7 +7,7 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .prs1 {
     font-size: 2rem;
-    padding-bottom:calc(100% * (121 / 211) + 100px);
+    padding-bottom:calc(100% * (121 / 211) + 100px) !important;
   }
   .bg1{
     width:100%;

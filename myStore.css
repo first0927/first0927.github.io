@@ -1,6 +1,53 @@
 @media (max-width: 480px) {
   .prs1 {
+    font-size: 2rem;
+    padding-bottom:calc(100% * (121 / 211) + 100px) !important;
+  }
+  .bg1{
+    width:100%;
+  }
+  .see1{
+    padding:0; 
+    height:auto;
+   }
+  .product__info-wrapper{
+    margin:0;
+    max-width:100% !important;
+    width:100% !important;
+    margin-top: calc(100%* calc(737 / 1680));
+  }
+  .prs2_textp{
+    font-size:2rem;
+    top: 0 !important;
+    transform: translateY(calc(-100vw*(121 / 211) - 100px)) !important;
+    padding-left:5vw;
+  }
+  .bg2Px{
+    top: 0 !important;
+    transform: translateY(-100%) !important;
+    width:96% !important;
+  }
+  .sale2{
+    top:0;
+    transform:translateX(-50%) translateY(-100%) !important;
+  }
+  .prs2{
+    height:15vh !important;
+  }
+  .text_bottom_b{
+    font-size:3rem !important;
+  }
+  .text_bottom_a{
+    font-size:1.5rem !important;
+  }
+  .pres3_5_text{
     font-size: 1.5rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+/*   Projects that don't get paid  */
+  .pres4>.se1,.se2{
+    width: 74vw;
   }
 }
 

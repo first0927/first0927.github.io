@@ -17,7 +17,7 @@
     margin-top: calc(100%* calc(737 / 1680));
   }
   .prs2_textp{
-    font-size:2rem;
+    font-size:1.5rem;
     top: 0 !important;
     transform: translateY(calc(-100vw*(121 / 211) - 100px)) !important;
     padding-left:5vw;
@@ -35,10 +35,10 @@
     height:15vh !important;
   }
   .text_bottom_b{
-    font-size:3rem !important;
+    font-size:2rem !important;
   }
   .text_bottom_a{
-    font-size:1.5rem !important;
+    font-size:1rem !important;
   }
   .pres3_5_text{
     font-size: 1.5rem;

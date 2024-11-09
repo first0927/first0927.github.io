@@ -26,7 +26,7 @@
     font-size:2rem;
     top: 0 !important;
     transform: translateY(calc(-100vw*(121 / 211) - 100px)) !important;
-    left:5vw;
+    padding-left:5vw;
   }
   .bg2Px{
     top: 0 !important;

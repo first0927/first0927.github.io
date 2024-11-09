@@ -37,6 +37,12 @@
     top:0;
     transform:translateX(-50%) translateY(-100%) !important;
   }
+  .prs2{
+    height:30vh !important;
+  }
+  .text_bottom_b{
+    font-size:3rem !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

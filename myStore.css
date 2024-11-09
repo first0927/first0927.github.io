@@ -24,8 +24,8 @@
   }
   .prs2_textp{
     font-size:2rem;
-    top: -100% !important;
-    transform: translateY(400%) ;
+    top: 0 !important;
+    transform: translateY(calc(-85vw*(121 / 211))) !important;
   }
   .bg2Px{
     top: 0 !important;

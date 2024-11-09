@@ -24,6 +24,7 @@
   }
   .prs2_textp{
     font-size:2rem;
+    top:calc(-100%*(121 / 211) - 12rem) !important;
   }
   .bg2Px{
     top: calc(-100%*(121 / 211)) !important;

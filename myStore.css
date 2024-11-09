@@ -30,6 +30,7 @@
   .bg2Px{
     top: 0 !important;
     transform: translateY(-100%) !important;
+    width:96% !important;
   }
 }
 

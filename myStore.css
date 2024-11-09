@@ -46,6 +46,11 @@
   .text_bottom_a{
     font-size:1.5rem !important;
   }
+  .pres3_5_text{
+    font-size: 1.5rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

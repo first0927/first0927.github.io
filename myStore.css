@@ -51,6 +51,10 @@
     padding-left: 5vw;
     padding-right: 5vw;
   }
+/*   Projects that don't get paid  */
+  .pres4>.se1,.se2{
+    width: 74vw;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

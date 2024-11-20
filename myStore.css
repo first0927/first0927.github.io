@@ -1,8 +1,8 @@
 .fy_r_c {
       display: flex;
       flex-wrap: wrap;
-      row-gap: 3rem;
-      column-gap: 3rem;
+      row-gap: 1rem;
+      column-gap: 1rem;
       padding: 0 10rem;
       box-sizing: border-box;
     }
